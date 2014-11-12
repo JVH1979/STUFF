@@ -8,10 +8,14 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <link href="/assets/styles.css" media="screen" rel="stylesheet" />
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
  
        
 </head>
 <body>
+
 
 <%= yield %>
 

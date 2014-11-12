@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 #first project using FOUNDATION
 gem 'foundation-rails'
+#authentication
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

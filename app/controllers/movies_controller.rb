@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  before_action :current_user
+
   def new
     @movie = Movie.new
   end
