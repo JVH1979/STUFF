@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+<h1>RECORDS</h1>
+
+<%= link_to "Add a New Record", new_record_path %>
+<br>
+<%= @records.each do |record| %>
+  <%= link_to record.title, record_path(record) %>
+  <%= link_to "EDIT", edit_record_path(record) %>
+  <%= link_to "DELETE", record_path(record), method: :delete %>
+  <br>
+<% end %>
